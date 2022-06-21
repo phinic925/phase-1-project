@@ -16,3 +16,11 @@ document.addEventListener("DOMContentLoaded",() =>{
      .then(data=> console.log(data))
  }
  fetchData();
+ function renderMeals(meals){
+     let mealContainer = document.querySelector("#meals-container")
+     meals.forEach(meal => {
+      const image = document.createElement("img")
+     // image.textContent=meal.   
+         
+     })
+ }
