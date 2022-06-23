@@ -6,47 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Recipe </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/style.css"> 
+   <!--links to bootstrap-->
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.css">
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
+
 </head>
 <body>
-    <div id="container">
+<div class="container">
+    <div class="wrapper">
 
         <div id="box-container">
             <h1 id="heading"> We Care For You! </h1>
             <p>Good food is the foundation of happiness  </p>
             <h2> Get Recipes for your Ingredients </h2>
      </div>
-     <div id="search-box">
+     
+     <div id="container">
+         <br>
          <form>
-             <input type="text" id="search-input" placeholder="Enter Your Ingredient">
-             <button type="submit"> <i class="fa fa-search"> </i> </button>
+             <div class="input-group col-xs-4">
+             <input type="text" id="search-input" class="form-control input-lg" placeholder="Enter Your Ingredient">
+             <div class="input-group-btn">
+            <button type="submit" class= "btn btn-default" id="btn-search"> <i class=" fa fa-search glyphicon glyphicon-search"> </i> </button>
+             </div>
          </form>
      </div>
 
      
-    </div>
+ 
      <!--div for meals -->
-<section id="meals-container">
-    <div id="results">
-       
-        <h3 class="results"> Your Search Results: </h3>
-       
-       
-    <div id="meal">
-       
-    <img src="/assets/pexels-sebastian-coman-photography-3659862.jpg">
-       
-    <h3> Potato chips </h3>
-     <button type="button" id="button"> Get Recipe </button>
-     </div>
      
+      <div class="meal-result" id="meals-container">
+        <br>
+       
+      <h3> Your Search Results: </h3>
+        <div id="results">
+            <!--meals-->
+         
 
+         
+        </div>
+     </div>
+        
+    
     </div>
-</section>
-  
-
+   
+</div>
     
 
- <script type="text/javascript" src="/js/index.js"> </script>   
+  <script type="text/javascript" src="/js/index.js"> </script>   
 </body>
 </html>

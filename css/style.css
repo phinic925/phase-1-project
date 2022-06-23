@@ -1,83 +1,76 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/*body{
-    background-image: url("/assets/image2.jpg");
+body{
+    background-image: url("/assets/image3.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 300vh;
+    background-repeat: no-repeat;
+ 
 }
-*/
-    
-   
 
+#button{
+    margin-left: 20px;
+}
 #box-container{
-   text-align: center;
+    text-align: center;
     margin-top: 50px;
-    align-items: center;
+}
+#results{
+ 
+ margin-top: 80px;
+}
+#btn-search{
+    border: 1px solid gray;
+    border-top-right-radius: 20px;
+    background-color: #0d6efd;
+}
+#image{
+    height: 400px;
+    width: 300px;
+}
+#meals-container{
+   margin-top: 100px;
 
 }
 #heading{
-    color: black;
-    font-size: 40px;
     font-style: italic;
-
+    color: white;
+    font-size: 70px;
 }
-p{
-    font-size: 10px;
-    margin-top: 50px;
-    font-style: italic;
+#meals-container h3{
+    color: white;
 }
-h2{
-    margin-top: 50px;
+#box-container h2{
+    color: white;
 }
- form #search-input{
-margin-left: 500px;
-margin-top: 40px;
-padding: 20px;
-border: 1px solid gray;
-border-radius: 8px;
-font-size: 20px;
+#box-container{
+    font-style: oblique;
+    font-size: 12px;
+    color: #0d6efd;
 }
-form button{
-   padding: 20px;
-   border: 1px solid gray;
-   border-radius: 8px;
-   font-size: 20px;
-   background-color: orangered;
-}
-.results{
-margin-left: 500px;
-margin-top: 50px;
-
-}
-
-#meal img{
-    height: 400px;
-    width: 350px;
-    margin-top: 100px;
-    display: block;
-
-}
-
-  
-#meal h3{
-    margin-left: 80px;
-    margin-top: 20px;
-    color: black;
-    font-size: 30px;
-
-}
-#button{
-    margin-left: 100px;
-    font-size: 20px;
-    background-color: olivedrab;
-    border: 1px solid olive;
-    border-radius: 8px;
-    padding: 10px;
-}
+ /*
 #meals-container {
-    display: flex; 
-   justify-content: space-between;
+    flex: 33.33%;
+    padding: 5px;
+}*/
+.wrapper{
+    text-align: center;
+    padding: 2rem;
+    background: scroll;
+    max-width: 1200px;
 }
+.meal-item{
+    display: flex;
+    flex-direction:column;
+   }
+.meal-name{
+    padding: 1.5rem 0.5rem;
+}
+.meal-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+   
+}
+
+
+
