@@ -1,3 +1,9 @@
+body{
+    background-image: url("/assets/image3.jpg");
+    background-size: cover;
+    height: 600vh;
+    background-repeat: no-repeat;
+}
 #button{
     margin-left: 20px;
 }
@@ -27,14 +33,14 @@
 }
 #heading{
     font-style: italic;
-    color: black;
+    color: whitesmoke;
     font-size: 70px;
 }
 #meals-container h3{
     color: whitesmoke;
 }
 #box-container h2{
-    color: black;
+    color: whitesmoke;
 }
 #box-container{
     font-style: oblique;
