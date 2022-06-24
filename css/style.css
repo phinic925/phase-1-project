@@ -185,3 +185,10 @@
 .recipe-link a:hover{
     opacity: 0.8;
 }
+#like-button{
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: bisque;
+}
+
+    
