@@ -2,7 +2,7 @@ let form = document.querySelector("form")
 let searchBtn = document.getElementById("btn-search")
 let mealContainer = document.querySelector("#meals-container")
 
-let mealContent = document.querySelector("#content")
+let mealContent = document.getElementById("content")
 let searchRecipe = document.getElementById("recipe-up-btn")
 let searchMeals = document.getElementById("recipe-btn")
 let mealResult = document.getElementById("results")
@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded",() =>{
     searchBtn.addEventListener("click", findMeals)
     mealContainer.addEventListener('click',getRecipe)
    // mealResult.addEventListener("click", getRecipe)
-    //searchRecipe.addEventListener("click",(e) => {
+    searchRecipe.addEventListener("click",(e) => {
         
-        //mealContent.parentElement.classList.remove('showRecipe');
+        mealContent.parentElement.classList.remove('showRecipe');
     //searchMeals.addEventListener("click",getRecipeMeals)
         
 
   
-  
+    })
   
 })
     function findMeals(data){
