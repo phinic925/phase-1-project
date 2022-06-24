@@ -1,6 +1,12 @@
 let form = document.querySelector("form")
 let searchBtn = document.getElementById("btn-search")
-let mealItems =[];
+let mealContainer = document.querySelector("#meals-container")
+
+let mealContent = document.querySelector("#content")
+let searchRecipe = document.getElementById("recipe-up-btn")
+let searchMeals = document.getElementById("recipe-btn")
+let mealResult = document.getElementById("results")
+
 
 document.addEventListener("DOMContentLoaded",() =>{
     
@@ -11,9 +17,18 @@ document.addEventListener("DOMContentLoaded",() =>{
         findMeals();
        
    })
-  searchBtn.addEventListener("click", findMeals)
- 
-  //alert(4)
+    searchBtn.addEventListener("click", findMeals)
+    mealContainer.addEventListener('click',getRecipe)
+   // mealResult.addEventListener("click", getRecipe)
+    //searchRecipe.addEventListener("click",(e) => {
+        
+        //mealContent.parentElement.classList.remove('showRecipe');
+    //searchMeals.addEventListener("click",getRecipeMeals)
+        
+
+  
+  
+  
 })
     function findMeals(data){
         let searchInput = document.getElementById("search-input").value.trim();
@@ -25,12 +40,12 @@ document.addEventListener("DOMContentLoaded",() =>{
       
         .then(resp => resp.json())
         .then(data=>{
-            console.log(data)
+            //console.log(data)
      
 
       
 
-     let mealContainer = document.querySelector("#meals-container")
+     
      let data1=""
      if(data.meals){
      data.meals.forEach(meal => {
@@ -40,7 +55,7 @@ document.addEventListener("DOMContentLoaded",() =>{
          <img src="${meal.strMealThumb}" class="img-rounded" id="image"> </div>
           <div class="meal-name">  
          <h3> ${meal.strMeal} </h3> 
-          <button type="button" id="button" class= "btn btn-primary recipe"> Get Recipe </button>
+         <a class = "recipe-btn">Get Recipe</a>
           </div>
           </div>
           `
@@ -60,21 +75,29 @@ document.addEventListener("DOMContentLoaded",() =>{
    findMeals();
 
     function getRecipe(e){
-        if(e.target.classList.contains('recipe')){
+        e.preventDefault();
+        if(e.target.classList.contains('recipe-btn')){
+            let mealItem = e.target.parentElement.parentElement;
          fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
         .then(response=> response.json())
-        .then(data=>{
-            return mealRecipe(data.meals)
-            //console.log(data.meals)
+        .then(data=> {
+           // console.log(data)
+           return getRecipeMeals(data.meals)
 
         })
+            
+            
+            
+
+      
     }
 
-    }
+}
     function getRecipeMeals(meal){
         console.log(meal);
+        meal = meal[0];
         let data1="";
-        data1 += `<h2 class = "recipe-title">${meal.strMeal}</h2>
+        data1 = `<h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">${meal.strCategory}</p>
         <div class = "recipe-instruct">
             <h3>Instructions:</h3>
@@ -86,6 +109,9 @@ document.addEventListener("DOMContentLoaded",() =>{
         <div class = "recipe-link">
             <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
         </div>`
+        mealContent.innerHTML=data1;
+        mealContent.parentElement.classList.add('showRecipe');
+
 
     }
 
