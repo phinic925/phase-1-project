@@ -108,7 +108,12 @@ document.addEventListener("DOMContentLoaded",() =>{
         </div>
         <div class = "recipe-link">
             <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
-        </div>`
+        </div>
+        <div id="like-section">
+    <span id="like-count">0 likes </span>
+    <button id="like-button"> ♡ </button>
+</div>
+        `
         mealContent.innerHTML=data1;
         mealContent.parentElement.classList.add('showRecipe');
 
