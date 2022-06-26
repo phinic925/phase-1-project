@@ -5,9 +5,9 @@
     let searchRecipe = document.getElementById("recipe-up-btn")
     let searchMeals = document.getElementById("recipe-btn")
     let mealResult = document.getElementById("results")
-    let countLikes = document.getElementById('like-count')
-    let likeButton = document.getElementById('like-button')
-    let integer = 0;
+    let countLikes = document.getElementById("like-count")
+    let likeButton = document.getElementById("like-button")
+    
 
 
     document.addEventListener("DOMContentLoaded",() =>{
@@ -23,11 +23,11 @@
         mealContainer.addEventListener('click',getRecipe)
         searchRecipe.addEventListener("click",(e) => {
         mealContent.parentElement.classList.remove('showRecipe');
-        
         likeButton.addEventListener('click', () => {
-        integer += 1
-        countLikes.innerHTML = `${integer} likes`;
-    })
+            let integer = 0;
+            integer += 1
+            countLikes.innerHTML = `${integer} likes`;
+       })
   
         
 
