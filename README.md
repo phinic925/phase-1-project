@@ -4,7 +4,7 @@
 
 ## Landing Page
 
-![image]()
+
 
 
 ## Table of Content
@@ -51,7 +51,7 @@ As a user of the application,you will be able to :
 - Unzip the downloaded files in a folder of choice.
 - Open the index file from the zipped file with any browser.
 
-### live link phinic925.github.io/phase-1-project/
+### live link phinic925.github.io/phase-1-project
 ### Technology used
 
 - HTML - which was used to develope the structure off the pages.
