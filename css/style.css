@@ -1,8 +1,9 @@
 body{
-    background-image: url("/assets/image3.jpg");
-    background-size: cover;
-    height: 400vh;
-    background-repeat: no-repeat;
+background-image: url("https://images.unsplash.com/photo-1581349485608-9469926a8e5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlZiUyMGNvb2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+background-size: cover;
+background-repeat: no-repeat;
+
+
 }
 #button{
     margin-left: 20px;
