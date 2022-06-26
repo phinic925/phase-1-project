@@ -138,6 +138,24 @@ body{
     justify-content: center;
     opacity: 0.9;
 }
+#like-section{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 1.8rem;
+    border: none;
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
 .recipe-title{
     letter-spacing: 1px;
     padding-bottom: 1rem;
@@ -199,7 +217,7 @@ body{
 #like-button{
     font-size: 30px;
     margin-left: 20px;
-    background-color: bisque;
+    background-color: oldlace;
 }
 
     

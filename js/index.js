@@ -23,16 +23,16 @@
         mealContainer.addEventListener('click',getRecipe)
         searchRecipe.addEventListener("click",(e) => {
         mealContent.parentElement.classList.remove('showRecipe');
-        likeButton.addEventListener('click', () => {
-            let integer = 0;
-            integer += 1
-            countLikes.innerHTML = `${integer} likes`;
-            
+        
        })
+       likeButton.addEventListener('click', () => {
+          // alert(4)
+        let integer = 0;
+        integer += 1
+        countLikes.innerHTML = `${integer} likes`;
+        //getRecipeMeals()
         
-  
         
-
   
     })
   
@@ -74,7 +74,7 @@
                        mealContainer.classList.remove('not-found');
     }
                 else{
-                    data1 = "Results not found!"
+                    data1 = "Results not found"
                     mealContainer.classList.add('not-found');
                 }
                 mealContainer.innerHTML = data1; 
@@ -119,10 +119,7 @@
                             <div class = "recipe-link">
                                 <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
                             </div>
-                            <div id="like-section">
-                        <span id="like-count">0 likes </span>
-                        <button id="like-button"> ♡ </button>
-                    </div>
+                           
                             `
                            
                             mealContent.innerHTML=data1;
