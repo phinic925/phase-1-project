@@ -27,7 +27,9 @@
             let integer = 0;
             integer += 1
             countLikes.innerHTML = `${integer} likes`;
+            
        })
+        
   
         
 
@@ -122,8 +124,10 @@
                         <button id="like-button"> ♡ </button>
                     </div>
                             `
+                           
                             mealContent.innerHTML=data1;
                             mealContent.parentElement.classList.add('showRecipe');
+                           
 
 
     }
