@@ -1,4 +1,5 @@
-# phase-1-project
+# food recipe application
+
 
 ## by phinic nyangate
 
