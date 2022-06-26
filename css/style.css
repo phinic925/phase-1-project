@@ -1,7 +1,7 @@
 body{
     background-image: url("/assets/image3.jpg");
     background-size: cover;
-    height: 600vh;
+    height: 400vh;
     background-repeat: no-repeat;
 }
 #button{
